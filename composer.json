@@ -1,0 +1,16 @@
+{
+    "name": "asus/bilal-plugin",
+    "description": "Awesome starter plugin example",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Bilal Ahmad Afridi",
+            "email": "bilalkhan891@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}

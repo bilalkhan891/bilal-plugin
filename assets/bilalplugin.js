@@ -1,0 +1,1 @@
+console.log('Bilal Plugin Javascript File Working!');

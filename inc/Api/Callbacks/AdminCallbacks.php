@@ -34,5 +34,9 @@ class AdminCallbacks extends BaseController {
 		$value = esc_attr( get_option( 'text_example' ) );
 		echo '<input type="text" class="regular-text" name="text_example" value="' . $value . '" placeholder="Enter Some Text">';
 	}
+	public function bilalFirstName(){
+		$value = esc_attr( get_option( 'first_name' ) );
+		echo '<input type="text" class="regular-text" name="first_name" value="' . $value . '" placeholder="Enter First Name">';
+	}
 
 }

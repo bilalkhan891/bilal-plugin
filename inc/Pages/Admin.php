@@ -97,6 +97,10 @@ class Admin extends BaseController
 				'option_name'	=> 'text_example',
 				'callback'		=> array( $this->callbacks, 'bilalOptionsGroup' )
 			),
+			array(
+				'option_group' 	=> 'bilal_options_group',
+				'option_name'	=> 'first_name' 
+			),
 		);
 
 		$this->settings->setSettings( $args );
@@ -127,6 +131,17 @@ class Admin extends BaseController
 				'section' => 'bilal_admin_index',
 				'args' => array ( 
 					'label_for' => 'text_example',
+					'class' => 'example-class'
+				)
+			),
+			array(
+				'id' 	=> 'first_name',
+				'title'	=> 'First Name',
+				'callback'		=> array( $this->callbacks, 'bilalFirstName' ),
+				'page' => 'bilal_plugin',
+				'section' => 'bilal_admin_index',
+				'args' => array ( 
+					'label_for' => 'first_name',
 					'class' => 'example-class'
 				)
 			),
